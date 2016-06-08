@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>File Upload Examples</title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+    <div class="demo__container">
+    	<h1>File Upload Control</h1>
+    	<section class="file-browse" id="fileUploadControl">
+            <input placeholder="Choose File" disabled="disabled" class="file-browse__input" />
+            
+            <div class="file-browse__control">
+                <label for="">Browse</label>
+                <input type="file" class="file-browse__upload" multiple id=""/>
+            </div>
+            
+        </section>
+    </div>
+    <script>
+        $(document).ready(function () {
+           
+            //file upload
+            
+            $("#fileUploadControl").fileUpload()
+            
+        });
+    </script>
+       	
+</body>
+</html>
